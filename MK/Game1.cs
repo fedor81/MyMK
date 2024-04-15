@@ -12,7 +12,6 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
 
-    private Texture2D background;
     private GameModel _model;
     private GameView _view;
     private GameController _controller;
@@ -29,6 +28,7 @@ public class Game1 : Game
         // TODO: Add your initialization logic here
         _model = new GameModel();
         _controller = new GameController();
+        _view = new GameView();
 
         Window.AllowUserResizing = true;
 
@@ -41,75 +41,50 @@ public class Game1 : Game
 
         // TODO: use this.Content to load your game content here
 
-        _view = new GameView(_spriteBatch, Window)
-        {
-            Background = Content.Load<Texture2D>("img/background/1")
-        };
+        _view.Background = new Background(Content.Load<Texture2D>("img/background/1"));
 
         LoadSpritesPlayers();
     }
 
-    private PlayerImages[] LoadSpritesPlayers()
+    private Dictionary<string, PlayerImages> LoadSpritesPlayers()
     {
         var dirs = Directory.GetDirectories("Content/img/players");
-        var players = new PlayerImages[dirs.Length];
-        var p = typeof(PlayerImages);
+        var players = new Dictionary<string, PlayerImages>();
+        var actionNames = typeof(PlayerImages.ActionType);
 
-        for (var i = 0; i < dirs.Length; i++)
+        foreach (var playerImagesDir in dirs)
         {
-            var playerImagesDir = dirs[i];
-            var player = new PlayerImages();
+            var playerImages = new PlayerImages();
 
-            foreach (var actionDir in Directory.GetDirectories(playerImagesDir))
+            foreach (var actionName in actionNames.GetEnumNames())
             {
-                foreach (var actionTypeDir in Directory.GetDirectories(actionDir))
-                {
-                    var dirName = Path.GetDirectoryName(actionTypeDir);
-                    foreach (var actionType in Directory.GetFiles(actionTypeDir))
-                    {
-                        // player.SetTexturesForAction();
-                    }
-                }
+                var actionArr = actionName.Split('_');
+                if (actionArr.Length <= 0) continue;
+
+                var pathList = new List<string> { playerImagesDir };
+                pathList.AddRange(actionArr);
+                var path = Path.Combine(pathList.ToArray());
+                playerImages.SetTexturesForAction(actionName, GetLoadImages(path).ToArray());
             }
-            // foreach (var fieldInfo in fieldInfos.Where(fieldInfo => fieldInfo.FieldType == typeof(Texture2D[])))
-            // {
-            //     var path = Path.Combine(playerImagesDir, fieldInfo.Name);
-            //     fieldInfo.SetValue(player, GetLoadImages(path).ToArray());
-            // }
-            //
-            // foreach (var fieldInfo in typeof(PlayerTypesOfImages).GetFields())
-            // {
-            //     var path = Path.Combine(playerImagesDir, fieldInfo.Name);
-            //     foreach (var dir in Directory.GetDirectories(path))
-            //     {
-            //     }
-            // }
 
-
-            players[i] = player;
+            players[Path.GetDirectoryName(playerImagesDir)!] = playerImages;
         }
 
         return players;
     }
 
-
     private IEnumerable<Texture2D> GetLoadImages(string pathToFolder)
     {
         const int lengthOfWordContent = 8;
+
         var pathWithoutContent = pathToFolder[lengthOfWordContent..];
-        return Directory.GetFiles(pathToFolder).Select(Path.GetFileNameWithoutExtension).OrderBy(imageName => imageName)
+        var files = Directory.GetFiles(pathToFolder);
+
+        return files
+            .Select(Path.GetFileNameWithoutExtension)
+            .OrderBy(imageName => imageName)
             .Select(imageName => Content.Load<Texture2D>(Path.Combine(pathWithoutContent, imageName)));
     }
-
-    // public Texture2D LoadImage(string path)
-    // {
-    //     return Content.Load<Texture2D>(path);
-    // }
-    //
-    // private int GetNumberImage(string pathToFile)
-    // {
-    //     return int.Parse(Path.GetFileNameWithoutExtension(pathToFile));
-    // }
 
     protected override void Update(GameTime gameTime)
     {
@@ -128,12 +103,7 @@ public class Game1 : Game
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
-        // TODO: Add your drawing code here
-        // _view.Draw();
-        _spriteBatch.Begin();
-        _view.DrawBackground();
-        _view.DrawPlayer(_model.Player);
-        _spriteBatch.End();
+        _view.Draw(_spriteBatch);
 
         base.Draw(gameTime);
     }

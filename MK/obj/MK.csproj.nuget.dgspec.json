@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/komputer/c#/Projects/MK/MK/MK.csproj": {}
+    "/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/MK.csproj": {}
   },
   "projects": {
-    "/Users/komputer/c#/Projects/MK/MK/MK.csproj": {
+    "/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/MK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/komputer/c#/Projects/MK/MK/MK.csproj",
+        "projectUniqueName": "/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/MK.csproj",
         "projectName": "MK",
-        "projectPath": "/Users/komputer/c#/Projects/MK/MK/MK.csproj",
+        "projectPath": "/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/MK.csproj",
         "packagesPath": "/Users/komputer/.nuget/packages/",
-        "outputPath": "/Users/komputer/c#/Projects/MK/MK/obj/",
+        "outputPath": "/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/komputer/.nuget/NuGet/NuGet.Config"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

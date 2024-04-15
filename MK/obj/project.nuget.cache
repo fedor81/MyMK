@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "94eUMbV02tqX2zGQMRU8jAnmS5wyUHSLGv10ClLE50GkMCAAzGz3UibKhdeDxFI9AtL447HOeOveQlLgP6Ifxg==",
+  "dgSpecHash": "R8d25gycc5UOd6ldwvYpa8h52d9nSRP3WYm0ZnMPHFvm4hWqCZnxZ2P9rduNy9s2IvCX+FhhZRVVDEmSBC51HA==",
   "success": true,
-  "projectFilePath": "/Users/komputer/c#/Projects/MK/MK/MK.csproj",
+  "projectFilePath": "/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/MK.csproj",
   "expectedPackageFiles": [
     "/Users/komputer/.nuget/packages/monogame.content.builder.task/3.8.1.303/monogame.content.builder.task.3.8.1.303.nupkg.sha512",
     "/Users/komputer/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
