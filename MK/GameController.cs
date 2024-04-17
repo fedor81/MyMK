@@ -21,6 +21,8 @@ public class GameController
             sendData.MoveDirection = Directions.Left;
         if (keyboardState.IsKeyDown(Keys.W))
             sendData.MoveDirection = Directions.Up;
+        if (keyboardState.IsKeyDown(Keys.S))
+            sendData.MoveDirection = Directions.Down;
         
         return sendData;
     }

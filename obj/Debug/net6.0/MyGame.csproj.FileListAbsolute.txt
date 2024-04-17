@@ -1,0 +1,278 @@
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/MyGame
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/MyGame.deps.json
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/MyGame.runtimeconfig.json
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/MyGame.dll
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/MyGame.pdb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/MonoGame.Framework.dll
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.csproj.AssemblyReference.cache
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.AssemblyInfoInputs.cache
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.AssemblyInfo.cs
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.csproj.CoreCompileInputs.cache
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.csproj.CopyComplete
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.dll
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/refint/MyGame.dll
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.pdb
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/MyGame.genruntimeconfig.cache
+/Users/komputer/c#/Projects/MyGame/obj/Debug/net6.0/ref/MyGame.dll
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/background/1.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/background/2.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/background/3.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/background/4.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/background/gif/1.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/background/gif/2.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/down/d01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/down/d02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/down/d03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/standingup/h01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/standingup/h02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/standingup/l01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/standingup/l02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/standingup/l03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/strongly/s01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/strongly/s02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/strongly/s03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/strongly/s04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/strongly/s05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/strongly/s06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Being Hit/strongly/s07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/down/d01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/down/d02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/down/d03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/standingup/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/standingup/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/standingup/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/10.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/11.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/12.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/13.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/14.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/15.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/16.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/17.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/18.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/19.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/20.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/21.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/22.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/23.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/24.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Combos/25.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/10.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Dizzy/11.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Ducking/d01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Ducking/d02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Ducking/d03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h10.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h11.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h12.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Falling Getting Up/h13.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Fighting Stance/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Flip/f09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Jumping/j01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Jumping/j02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Jumping/j03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/air/a01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/air/a02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/air/a03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/down/d08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/forward/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/forward/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/forward/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/forward/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/forward/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/forward/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/forward/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/right/r01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/right/r02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/right/r03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/right/r04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/right/r05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/right/r06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/right/r07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/sliding/a04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/sliding/a05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/sliding/a06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/trippingup/s01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/trippingup/s02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/trippingup/s03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/trippingup/s04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/trippingup/s05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/trippingup/s06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/trippingup/s07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/air/a01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/air/a02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/air/a03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/down/d01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/down/d02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/down/d03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/10.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/11.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/12.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/13.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/standingup/14.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/up/u01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/up/u02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/up/u03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/up/u04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/up/u05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/10.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/11.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Running/12.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Walking/09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Body/l01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Body/l02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Body/l03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Down/d01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Down/d02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Down/d03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Head/h01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Head/h02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Strongly/s01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Strongly/s02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Strongly/s03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Strongly/s04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Strongly/s05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Strongly/s06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Strongly/s07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Throwing/t01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Throwing/t02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Throwing/t03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Throwing/t04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Throwing/t05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/BeingHit/Throwing/t06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/Stand/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/Stand/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Blocking/Stand/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h10.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h11.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h12.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FallingGettingUp/h13.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/FightingStance/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/Trip/s01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/Trip/s02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/Trip/s03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/Trip/s04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/Trip/s05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/Trip/s06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Kicking/Trip/s07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/07.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/08.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/09.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/10.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/11.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/12.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/13.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Punching/Stand/14.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Throwing/01.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Throwing/02.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Throwing/03.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Throwing/04.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Throwing/05.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Throwing/06.xnb
+/Users/komputer/c#/Projects/MyGame/bin/Debug/net6.0/Content/img/players/jax/Throwing/07.xnb

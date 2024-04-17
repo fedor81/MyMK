@@ -4,6 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/Content/img/background/1.jpg</File>
     <File>/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/Content/img/background/1.png</File>
     <File>/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/Content/img/background/2.jpg</File>
     <File>/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/Content/img/background/3.jpg</File>
@@ -199,6 +200,7 @@
     <File>/Users/komputer/Library/CloudStorage/OneDrive-УрФУ/MK/MK/Content/img/players/jax/Walking/09.gif</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

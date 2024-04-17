@@ -1,36 +1,44 @@
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace MK;
 
-public class Background
+public class Background : Drawable
 {
-    private Texture2D image;
     private int WindowWidth;
+    private List<Vector2> Positions;
 
     public Background(Texture2D image)
     {
-        this.image = image;
+        Image = image;
     }
 
     public float GetScale(int windowWidth, int windowHeight)
     {
         WindowWidth = windowWidth;
-        return (float)windowHeight / image.Height;
+        var scale = (float)windowHeight / Image.Height;
+
+        var backgroundWidth = (int)(Image.Width * scale);
+        Positions = new List<Vector2>();
+
+        for (var x = 0; x < WindowWidth; x += backgroundWidth)
+        {
+            Positions.Add(new Vector2(x, 0));
+        }
+
+        return scale;
     }
 
-    public void Draw(SpriteBatch spriteBatch, float scale)
+    public override void Draw(SpriteBatch spriteBatch, float scale)
     {
-        var effect = SpriteEffects.None;
-        Rectangle? clip = null;
-        var backgroundWidth = image.Width * scale;
-
-        for (float x = 0; x < WindowWidth; x += backgroundWidth)
+        Effect = SpriteEffects.None;
+        
+        foreach(var position in Positions)
         {
-            // if (x + backgroundWidth > Window.ClientBounds.Width)
-            //     clip = new Rectangle(0, 0, (int)((Window.ClientBounds.Width - backgroundWidth) / scale), background.Height);
-            GameView.DrawObject(spriteBatch, image, new Vector2(x, 0), clip, scale, effect);
-            effect = effect == SpriteEffects.None ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+            Position = position;
+            base.Draw(spriteBatch, scale);
+            Effect = Effect == SpriteEffects.None ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
         }
     }
 }

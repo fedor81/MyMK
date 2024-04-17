@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -25,13 +26,15 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        // TODO: Add your initialization logic here
-        _model = new GameModel();
         _controller = new GameController();
         _view = new GameView();
+        _model = new GameModel(_view.Objects);
+
+        // Установить FPS на 60
+        TargetElapsedTime = TimeSpan.FromTicks(TimeSpan.TicksPerSecond / 20);
 
         Window.AllowUserResizing = true;
-
+        
         base.Initialize();
     }
 
@@ -41,39 +44,45 @@ public class Game1 : Game
 
         // TODO: use this.Content to load your game content here
 
-        _view.Background = new Background(Content.Load<Texture2D>("img/background/1"));
+        _view.SetBackbround(new Background(Content.Load<Texture2D>("img/background/1")), Window.ClientBounds.Width,
+            Window.ClientBounds.Height);
 
-        LoadSpritesPlayers();
+        var player = new Player(GetPlayerImages("Content/img/players/jax"), 150, 150);
+        _model.Player = player;
+        _view.Objects.Add(player);
     }
 
-    private Dictionary<string, PlayerImages> LoadSpritesPlayers()
+    private Dictionary<string, PlayerImages> LoadAllPlayers()
     {
         var dirs = Directory.GetDirectories("Content/img/players");
         var players = new Dictionary<string, PlayerImages>();
-        var actionNames = typeof(PlayerImages.ActionType);
 
         foreach (var playerImagesDir in dirs)
-        {
-            var playerImages = new PlayerImages();
-
-            foreach (var actionName in actionNames.GetEnumNames())
-            {
-                var actionArr = actionName.Split('_');
-                if (actionArr.Length <= 0) continue;
-
-                var pathList = new List<string> { playerImagesDir };
-                pathList.AddRange(actionArr);
-                var path = Path.Combine(pathList.ToArray());
-                playerImages.SetTexturesForAction(actionName, GetLoadImages(path).ToArray());
-            }
-
-            players[Path.GetDirectoryName(playerImagesDir)!] = playerImages;
-        }
+            players[Path.GetDirectoryName(playerImagesDir)!] = GetPlayerImages(playerImagesDir);
 
         return players;
     }
 
-    private IEnumerable<Texture2D> GetLoadImages(string pathToFolder)
+    private PlayerImages GetPlayerImages(string playerImagesDir)
+    {
+        var playerImages = new PlayerImages();
+        var actionNames = typeof(PlayerImages.ActionType);
+
+        foreach (var actionName in actionNames.GetEnumNames())
+        {
+            var actionArr = actionName.Split('_');
+            if (actionArr.Length <= 0) continue;
+
+            var pathList = new List<string> { playerImagesDir };
+            pathList.AddRange(actionArr);
+            var path = Path.Combine(pathList.ToArray());
+            playerImages.SetTexturesForAction(actionName, LoadImages(path).ToArray());
+        }
+
+        return playerImages;
+    }
+
+    private IEnumerable<Texture2D> LoadImages(string pathToFolder)
     {
         const int lengthOfWordContent = 8;
 
