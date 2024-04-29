@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace MK;
@@ -73,8 +74,7 @@ public class GameModel
                     break;
                 }
                 default:
-                    player.Stand();
-                    break;
+                    throw new ArgumentOutOfRangeException();
             }
         }
     }
@@ -91,8 +91,11 @@ public class GameModel
             player.Move(y: windowHeight - player.HeatBox.Bottom);
     }
 
-    public void Update(ControllerData data)
+    public void ProssesControllerData(ControllerData data)
     {
-        MovePlayer(players[0], data.MoveDirections);
+        if (data.MoveDirections.Count > 0)
+            MovePlayer(players[0], data.MoveDirections);
+        else
+            players[0].Stand();
     }
 }

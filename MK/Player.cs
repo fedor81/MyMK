@@ -30,13 +30,15 @@ public class Player : Drawable
     {
         get
         {
-            if (FrameNumber + 1 >= FramesAction.Length)
+            // TODO: Пропадают отдельные кадры
+            FrameNumber++;
+            
+            if (FrameNumber >= FramesAction.Length)
             {
                 FrameNumber = 0;
-                IsLastFrame();
             }
 
-            return FramesAction[FrameNumber++];
+            return FramesAction[FrameNumber];
         }
     }
 
@@ -59,9 +61,17 @@ public class Player : Drawable
         Stand();
     }
 
-    public void MoveLeft() => MoveHorizontal(-HorizontalSpeed, SpriteEffects.FlipHorizontally);
+    public void MoveLeft()
+    {
+        MoveHorizontal(-HorizontalSpeed, SpriteEffects.FlipHorizontally);
+        LookingSide = LookingSide.Left;
+    }
 
-    public void MoveRight() => MoveHorizontal(HorizontalSpeed, SpriteEffects.None);
+    public void MoveRight()
+    {
+        MoveHorizontal(HorizontalSpeed, SpriteEffects.None);
+        LookingSide = LookingSide.Right;
+    }
 
     public void Stand()
     {
@@ -72,7 +82,6 @@ public class Player : Drawable
     {
         Move(x);
         Effect = effect;
-        if (_playerAction == PlayerActionTypes.Walking) return;
         SetAction(PlayerActionTypes.Walking);
     }
 
@@ -90,6 +99,7 @@ public class Player : Drawable
 
     private void SetAction(PlayerActionTypes playerAction)
     {
+        if (_playerAction == playerAction) return;
         _playerAction = playerAction;
         FramesAction = Images.GetTexturesForAction(playerAction);
         FrameNumber = 0;

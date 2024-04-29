@@ -33,7 +33,7 @@ public class GameController
             }
         }
 
-        _model.Update(sendData);
+        _model.ProssesControllerData(sendData);
     }
 
     public void ProcessPressedKey(object sender, InputKeyEventArgs inputKeyEventArgs)
@@ -43,7 +43,7 @@ public class GameController
         if (_keyToDirection.TryGetValue(inputKeyEventArgs.Key, out var direction))
             sendData.MoveDirections.Add(direction);
         
-        _model.Update(sendData);
+        _model.ProssesControllerData(sendData);
     }
 
     public void UpdateWindowSize(object sender, EventArgs eventArgs)
