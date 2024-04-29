@@ -32,7 +32,7 @@ public class Player : Drawable
         {
             // TODO: Пропадают отдельные кадры
             FrameNumber++;
-            
+
             if (FrameNumber >= FramesAction.Length)
             {
                 FrameNumber = 0;
@@ -85,6 +85,10 @@ public class Player : Drawable
         SetAction(PlayerActionTypes.Walking);
     }
 
+    public void Jump()
+    {
+    }
+
     public void MoveUp() => Move(y: -VerticalSpeed);
     public void MoveDown() => Move(y: VerticalSpeed);
 
@@ -111,7 +115,7 @@ public class Player : Drawable
         base.Draw(spriteBatch);
     }
 
-    public static void SetScale(int windowWidth, int windowHeight)
+    public static void SetPlayerScale(int windowWidth, int windowHeight)
     {
         const float playerHeightRelativeToWindowHeight = 2;
         PlayerImageScale = windowHeight / (playerHeightRelativeToWindowHeight * OriginalHeatBoxHeight);
@@ -121,13 +125,12 @@ public class Player : Drawable
 
         HorizontalSpeed = (int)(PlayerImageScale * OriginalHorizontalSpeed);
         VerticalSpeed = (int)(PlayerImageScale * OriginalVerticalSpeed);
+    }
 
-        foreach (var instance in Instances)
-        {
-            var player = instance as Player;
-            player!.HeatBox.Height = HeatBoxHeight;
-            player.HeatBox.Width = HeatBoxWidth;
-        }
+    public void SetHeatBoxSizes()
+    {
+        HeatBox.Height = HeatBoxHeight;
+        HeatBox.Width = HeatBoxWidth;
     }
 
     private void IsLastFrame()

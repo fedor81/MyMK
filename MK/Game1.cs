@@ -26,9 +26,9 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        _model = new GameModel(Window.ClientBounds.Width, Window.ClientBounds.Height);
-        _controller = new GameController(_model);
-        _view = new GameView(_model.ObjectsToDraw);
+        _model = new GameModel();
+        _controller = new GameController(_model, _view);
+        _view = new GameView(_model, Window.ClientBounds.Width, Window.ClientBounds.Height);
 
         // Установить FPS на 20
         TargetElapsedTime = TimeSpan.FromTicks(TimeSpan.TicksPerSecond / 20);
@@ -44,13 +44,13 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        _model.SetBackground(new Background(Content.Load<Texture2D>("img/background/1")));
+        _view.SetWindowSize(Window.ClientBounds.Width, Window.ClientBounds.Height);
+        _view.SetBackground(new Background(Content.Load<Texture2D>("img/background/1")));
 
         var player = new Player(GetPlayerImages("Content/img/players/jax"), 150, 150);
-        _model.players.Add(player);
-        _model.ObjectsToDraw.Add(player);
+        _model.Players.Add(player);
+        _view.ObjectsToDraw.Add(player);
         
-        _model.SetWindowSize(Window.ClientBounds.Width, Window.ClientBounds.Height);
     }
 
     private Dictionary<string, PlayerImages> LoadAllPlayers()

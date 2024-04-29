@@ -5,22 +5,13 @@ namespace MK;
 
 public class GameModel
 {
-    public readonly List<Drawable> ObjectsToDraw = new List<Drawable>();
-    private Background background { get; set; }
-    public List<Player> players = new();
+    public readonly List<Player> Players = new();
     private int windowWidth;
     private int windowHeight;
+    private int gravitationalAcceleration { get; set; }
 
-    public GameModel(int windowWidth, int windowHeight)
+    public GameModel()
     {
-        SetWindowSize(windowWidth, windowHeight);
-    }
-
-    public void SetBackground(Background background)
-    {
-        this.background = background;
-        this.background.SetScale(windowWidth, windowHeight);
-        ObjectsToDraw.Add(this.background);
     }
 
     public void SetWindowSize(int width, int height)
@@ -28,13 +19,13 @@ public class GameModel
         windowWidth = width;
         windowHeight = height;
 
-        if (background != null)
-            background.SetScale(width, height);
+        gravitationalAcceleration = windowHeight / 10;
 
-        Player.SetScale(windowWidth, windowHeight);
-        
-        foreach (var player in players)
+        Player.SetPlayerScale(windowWidth, windowHeight);
+
+        foreach (var player in Players)
         {
+            player.SetHeatBoxSizes();
             MovePlayerToScreenArea(player);
         }
     }
@@ -48,54 +39,68 @@ public class GameModel
                 case Directions.Right when player.HeatBox.Right < windowWidth:
                 {
                     player.MoveRight();
-                    if (player.HeatBox.Right > windowWidth)
-                        player.Move(x: windowWidth - player.HeatBox.Right);
+                    MovePlayerToScreenAreaRight(player);
                     break;
                 }
                 case Directions.Left when player.HeatBox.Left > 0:
                 {
                     player.MoveLeft();
-                    if (player.HeatBox.Left < 0)
-                        player.Move(x: -player.HeatBox.Left);
+                    MovePlayerToScreenAreaLeft(player);
                     break;
                 }
                 case Directions.Up when player.HeatBox.Top > 0:
                 {
                     player.MoveUp();
-                    if (player.HeatBox.Top < 0)
-                        player.Move(y: -player.HeatBox.Top);
+                    MovePlayerToScreenAreaTop(player);
                     break;
                 }
                 case Directions.Down when player.HeatBox.Bottom < windowHeight:
                 {
                     player.MoveDown();
-                    if (player.HeatBox.Bottom > windowHeight)
-                        player.Move(y: windowHeight - player.HeatBox.Bottom);
+                    MovePlayerToScreenAreaBottom(player);
                     break;
                 }
-                default:
-                    throw new ArgumentOutOfRangeException();
             }
         }
     }
 
     private void MovePlayerToScreenArea(Player player)
     {
-        if (player.HeatBox.Right > windowWidth)
-            player.Move(x: windowWidth - player.HeatBox.Right);
-        if (player.HeatBox.Left < 0)
-            player.Move(x: -player.HeatBox.Left);
-        if (player.HeatBox.Top < 0)
-            player.Move(y: -player.HeatBox.Top);
+        MovePlayerToScreenAreaRight(player);
+        MovePlayerToScreenAreaLeft(player);
+        MovePlayerToScreenAreaTop(player);
+        MovePlayerToScreenAreaBottom(player);
+    }
+
+    private void MovePlayerToScreenAreaBottom(Player player)
+    {
         if (player.HeatBox.Bottom > windowHeight)
             player.Move(y: windowHeight - player.HeatBox.Bottom);
+    }
+
+    private static void MovePlayerToScreenAreaTop(Player player)
+    {
+        if (player.HeatBox.Top < 0)
+            player.Move(y: -player.HeatBox.Top);
+    }
+
+    private static void MovePlayerToScreenAreaLeft(Player player)
+    {
+        if (player.HeatBox.Left < 0)
+            player.Move(x: -player.HeatBox.Left);
+    }
+
+    private void MovePlayerToScreenAreaRight(Player player)
+    {
+        if (player.HeatBox.Right > windowWidth)
+            player.Move(x: windowWidth - player.HeatBox.Right);
     }
 
     public void ProssesControllerData(ControllerData data)
     {
         if (data.MoveDirections.Count > 0)
-            MovePlayer(players[0], data.MoveDirections);
+            MovePlayer(Players[0], data.MoveDirections);
         else
-            players[0].Stand();
+            Players[0].Stand();
     }
 }

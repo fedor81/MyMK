@@ -8,6 +8,7 @@ namespace MK;
 public class GameController
 {
     private GameModel _model;
+    private GameView _view;
     private Dictionary<Keys, Directions> _keyToDirection = new Dictionary<Keys, Directions>()
     {
         [Keys.A] = Directions.Left,
@@ -16,9 +17,10 @@ public class GameController
         [Keys.S] = Directions.Down
     };
 
-    public GameController(GameModel model)
+    public GameController(GameModel model, GameView view)
     {
         _model = model;
+        _view = view;
     }
 
     public void ProcessPressedKeys(KeyboardState keyboard)
@@ -49,9 +51,10 @@ public class GameController
     public void UpdateWindowSize(object sender, EventArgs eventArgs)
     {
         var window = sender as GameWindow;
+        // TODO: Задать минимальный размер окна
         // if (window.ClientBounds.Width < window.ClientBounds.Height)
         
-        _model.SetWindowSize(window.ClientBounds.Width, window.ClientBounds.Height);
+        _view.SetWindowSize(window.ClientBounds.Width, window.ClientBounds.Height);
     }
 }
 
