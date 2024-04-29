@@ -14,30 +14,28 @@ public class Background : Drawable
         Image = image;
     }
 
-    public float GetScale(int windowWidth, int windowHeight)
+    public void SetScale(int windowWidth, int windowHeight)
     {
         WindowWidth = windowWidth;
-        var scale = (float)windowHeight / Image.Height;
+        Scale = (float)windowHeight / Image.Height;
 
-        var backgroundWidth = (int)(Image.Width * scale);
+        var backgroundWidth = (int)(Image.Width * Scale);
         Positions = new List<Vector2>();
 
         for (var x = 0; x < WindowWidth; x += backgroundWidth)
         {
             Positions.Add(new Vector2(x, 0));
         }
-
-        return scale;
     }
 
-    public override void Draw(SpriteBatch spriteBatch, float scale)
+    public override void Draw(SpriteBatch spriteBatch)
     {
         Effect = SpriteEffects.None;
         
         foreach(var position in Positions)
         {
             Position = position;
-            base.Draw(spriteBatch, scale);
+            base.Draw(spriteBatch);
             Effect = Effect == SpriteEffects.None ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
         }
     }

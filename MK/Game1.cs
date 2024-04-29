@@ -26,15 +26,17 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        _controller = new GameController();
-        _view = new GameView();
-        _model = new GameModel(_view.Objects);
+        _model = new GameModel(Window.ClientBounds.Width, Window.ClientBounds.Height);
+        _controller = new GameController(_model);
+        _view = new GameView(_model.ObjectsToDraw);
 
-        // Установить FPS на 60
+        // Установить FPS на 20
         TargetElapsedTime = TimeSpan.FromTicks(TimeSpan.TicksPerSecond / 20);
 
         Window.AllowUserResizing = true;
-        
+        Window.ClientSizeChanged += _controller.UpdateWindowSize;
+        // Window.KeyDown += _controller.ProcessPressedKey;
+
         base.Initialize();
     }
 
@@ -42,14 +44,13 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        // TODO: use this.Content to load your game content here
-
-        _view.SetBackbround(new Background(Content.Load<Texture2D>("img/background/1")), Window.ClientBounds.Width,
-            Window.ClientBounds.Height);
+        _model.SetBackground(new Background(Content.Load<Texture2D>("img/background/1")));
 
         var player = new Player(GetPlayerImages("Content/img/players/jax"), 150, 150);
-        _model.Player = player;
-        _view.Objects.Add(player);
+        _model.players.Add(player);
+        _model.ObjectsToDraw.Add(player);
+        
+        _model.SetWindowSize(Window.ClientBounds.Width, Window.ClientBounds.Height);
     }
 
     private Dictionary<string, PlayerImages> LoadAllPlayers()
@@ -66,7 +67,7 @@ public class Game1 : Game
     private PlayerImages GetPlayerImages(string playerImagesDir)
     {
         var playerImages = new PlayerImages();
-        var actionNames = typeof(PlayerImages.ActionType);
+        var actionNames = typeof(PlayerActionTypes);
 
         foreach (var actionName in actionNames.GetEnumNames())
         {
@@ -101,9 +102,7 @@ public class Game1 : Game
             Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
-        // TODO: Add your update logic here
-        var controllerData = _controller.Update(Keyboard.GetState());
-        _model.Update(controllerData);
+        _controller.ProcessPressedKeys(Keyboard.GetState());
 
         base.Update(gameTime);
     }

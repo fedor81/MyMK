@@ -5,13 +5,14 @@ namespace MK;
 
 public abstract class Drawable
 {
-    public virtual void Draw(SpriteBatch spriteBatch, float scale)
+    public virtual void Draw(SpriteBatch spriteBatch)
     {
-        spriteBatch.Draw(Image, Position, Rect, Color.White, 0f, Vector2.Zero, scale, Effect, 0);
+        spriteBatch.Draw(Image, Position, Rect, Color.White, 0f, Vector2.Zero, Scale, Effect, 0);
     }
 
-    public Texture2D Image { get; set; }
-    public Vector2 Position { get; set; }
-    public SpriteEffects Effect { get; set; } = SpriteEffects.None;
-    public Rectangle? Rect { get; set; }
+    protected virtual Texture2D Image { get; set; }
+    protected Vector2 Position { get; set; }
+    protected SpriteEffects Effect { get; set; } = SpriteEffects.None;
+    protected Rectangle? Rect { get; set; }
+    protected virtual float Scale { get; set; }
 }

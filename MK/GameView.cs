@@ -1,29 +1,15 @@
 using System.Collections.Generic;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace MK;
 
 public class GameView
 {
-    public readonly List<Drawable> Objects = new List<Drawable>();
-    private float scale;
-    private Background Background { get; set; }
+    public readonly List<Drawable> Objects;
 
-    public GameView()
+    public GameView(List<Drawable> objects)
     {
-    }
-
-    public void SetScale(int windowWidth, int windowHeight)
-    {
-        scale = Background.GetScale(windowWidth, windowHeight);
-    }
-
-    public void SetBackbround(Background background, int windowWidth, int windowHeight)
-    {
-        Background = background;
-        SetScale(windowWidth, windowHeight);
-        Objects.Add(Background);
+        Objects = objects;
     }
 
     public void Draw(SpriteBatch spriteBatch)
@@ -31,7 +17,7 @@ public class GameView
         spriteBatch.Begin();
 
         foreach (var obj in Objects)
-            obj.Draw(spriteBatch, scale);
+            obj.Draw(spriteBatch);
 
         spriteBatch.End();
     }

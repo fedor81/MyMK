@@ -1,30 +1,57 @@
+using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
 namespace MK;
 
 public class GameController
 {
-    private Dictionary<Keys, Directions> _keyToDirection = new Dictionary<Keys, Directions>();
-    
-    public GameController()
+    private GameModel _model;
+    private Dictionary<Keys, Directions> _keyToDirection = new Dictionary<Keys, Directions>()
     {
+        [Keys.A] = Directions.Left,
+        [Keys.D] = Directions.Right,
+        [Keys.W] = Directions.Up,
+        [Keys.S] = Directions.Down
+    };
+
+    public GameController(GameModel model)
+    {
+        _model = model;
     }
 
-    public ControllerData Update(KeyboardState keyboardState)
+    public void ProcessPressedKeys(KeyboardState keyboard)
+    {
+        var sendData = new ControllerData();
+        
+        foreach (var keyValuePair in _keyToDirection)
+        {
+            if (keyboard.IsKeyDown(keyValuePair.Key))
+            {
+                sendData.MoveDirections.Add(keyValuePair.Value);
+            }
+        }
+
+        _model.Update(sendData);
+    }
+
+    public void ProcessPressedKey(object sender, InputKeyEventArgs inputKeyEventArgs)
     {
         var sendData = new ControllerData();
 
-        if (keyboardState.IsKeyDown(Keys.A))
-            sendData.MoveDirection = Directions.Right;
-        if (keyboardState.IsKeyDown(Keys.D))
-            sendData.MoveDirection = Directions.Left;
-        if (keyboardState.IsKeyDown(Keys.W))
-            sendData.MoveDirection = Directions.Up;
-        if (keyboardState.IsKeyDown(Keys.S))
-            sendData.MoveDirection = Directions.Down;
+        if (_keyToDirection.TryGetValue(inputKeyEventArgs.Key, out var direction))
+            sendData.MoveDirections.Add(direction);
         
-        return sendData;
+        _model.Update(sendData);
+    }
+
+    public void UpdateWindowSize(object sender, EventArgs eventArgs)
+    {
+        var window = sender as GameWindow;
+        // if (window.ClientBounds.Width < window.ClientBounds.Height)
+        
+        _model.SetWindowSize(window.ClientBounds.Width, window.ClientBounds.Height);
     }
 }
 
@@ -38,7 +65,7 @@ public enum Directions
 
 public class ControllerData
 {
-    public Directions MoveDirection { get; set; }
+    public List<Directions> MoveDirections { get; set; } = new List<Directions>(4);
 
     public ControllerData()
     {
